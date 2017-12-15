@@ -13,7 +13,7 @@ pipeline {
 stages{
         stage('Build'){
             steps {
-                bat 'mvn clean package'
+                bat 'mvn -e clean package'
             }
             post {
                 success {
