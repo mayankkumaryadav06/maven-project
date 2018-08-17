@@ -3,8 +3,8 @@ pipeline {
     tools {
         maven 'localMaven'
     }
-    tools {
-        java 'localJava'
+    environment {
+        JAVA_HOME 'C:\\Program Files\\Java\\jdk1.8.0_181\\'
     }
     stages{
         stage('Build'){
