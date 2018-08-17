@@ -3,6 +3,9 @@ pipeline {
     tools {
         maven 'localMaven'
     }
+    tools {
+        java 'localJava'
+    }
     stages{
         stage('Build'){
             steps {
