@@ -15,6 +15,7 @@ pipeline {
                 success {
                     echo 'Now Archiving...'
                     archiveArtifacts artifacts: '**/target/*.war'
+                    build job: 'maven-build'
                 }
             }
         }
