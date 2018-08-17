@@ -3,7 +3,7 @@ pipeline {
     stages{
         stage('Build'){
             steps {
-                'mvn clean package'
+                'C:\Users\mayany\Desktop\apache-maven-3.5.4\bin\mvn clean package'
             }
             post {
                 success {
