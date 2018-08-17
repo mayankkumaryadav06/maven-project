@@ -1,6 +1,11 @@
 pipeline {
     agent any
-
+     tools {
+        maven 'localMaven'
+    }
+    environment {
+        JAVA_HOME = 'C:\\Program Files\\Java\\jdk1.8.0_181\\'
+    }
     parameters {
          string(name: 'tomcat_dev', defaultValue: '54.174.183.230', description: 'Staging Server')
          string(name: 'tomcat_prod', defaultValue: '54.152.159.201', description: 'Production Server')
